@@ -12,14 +12,14 @@
 
 set -e
 
-read -p "Enter the URL from email: " PRESIGNED_URL
+read -p "Enter the URL from email:https://llama3-1.llamameta.net/*?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV " PRESIGNED_URL
 ALL_MODELS_LIST="meta-llama-3.1-405b,meta-llama-3.1-70b,meta-llama-3.1-8b,meta-llama-guard-3-8b,prompt-guard"
 printf "\n **** Model list ***\n"
 for MODEL in ${ALL_MODELS_LIST//,/ }
 do
     printf " -  ${MODEL}\n"
 done
-read -p "Choose the model to download: " SELECTED_MODEL
+read -p "Choose the model to download:meta-llama-3.1-8b " SELECTED_MODEL
 printf "\n Selected model: ${SELECTED_MODEL} \n"
 
 SELECTED_MODELS=""
